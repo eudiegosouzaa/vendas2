@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Login</title>
+
+<link rel="stylesheet" href="css/registro.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="Formulario">
+
+  <div class="botoes-formulario">
+    <button id="btnLogin" class="ativo">Login</button>
+    <button id="btnRegistro">Registro</button>
+  </div>
+
+  <div class="area-formularios">
+
+    <!-- LOGIN -->
+    <form class="form-login">
+
+      <div class="caixa-formulario-login">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Usuário ou Telefone" required>
+      </div>
+
+      <div class="caixa-formulario-login">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Senha" required>
+      </div>
+
+      <div class="caixa-lembrar-esqueci">
+        <label>
+          <input type="checkbox">
+          Lembrar senha
+        </label>
+        <a href="#">Esqueci minha senha</a>
+      </div>
+
+      <button type="submit">Entrar</button>
+      <button type="button" class="btn-rapido">Registro rápido</button>
+
+    </form>
+
+    <!-- REGISTRO -->
+    <form class="form-registro">
+
+      <div class="caixa-formulario-login">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Usuário" required>
+      </div>
+
+      <div class="caixa-formulario-login">
+        <i class="fa-solid fa-phone"></i>
+        <input type="tel" placeholder="Telefone" required>
+      </div>
+
+      <div class="caixa-formulario-login">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Senha" required>
+      </div>
+
+      <button type="submit">Registrar</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>

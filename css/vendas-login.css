@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins", sans-serif;
+}
+
+/* 🔥 BASE MOBILE CORRETA */
+html, body{
+  height:100%;
+  min-height:100dvh;
+  overflow-x:hidden;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#c9e8ff,#8fd3ff,#5fb8ff);
+  overscroll-behavior:none;
+}
+
+/* CARD */
+.Formulario{
+  width:420px;
+  max-width:95%;
+  background:rgba(255,255,255,0.45);
+  border:1px solid rgba(255,255,255,0.6);
+  backdrop-filter:blur(14px);
+  border-radius:18px;
+  padding:30px;
+  transition:0.3s;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.Formulario:hover{
+  transform:translateY(-4px);
+}
+
+/* TÍTULO */
+h2{
+  text-align:center;
+  margin-bottom:20px;
+  font-weight:600;
+  font-size:24px;
+  color:#222;
+}
+
+/* INPUTS */
+.input-box{
+  margin-bottom:14px;
+}
+
+input:not([type="checkbox"]), select{
+  width:100%;
+  height:48px;
+  border:none;
+  border-radius:10px;
+  background:rgba(255,255,255,0.7);
+  padding:0 14px;
+  font-size:14px;
+  color:#2b2b2b;
+  font-weight:500;
+}
+
+input:focus,
+select:focus{
+  outline:none;
+  box-shadow:0 0 0 2px #7fd0ff;
+  background:white;
+}
+
+/* PRODUTOS */
+.linha-produto{
+  display:flex;
+  gap:8px;
+  margin-bottom:10px;
+  align-items:center;
+}
+
+.linha-produto select{
+  flex:1;
+  font-size:12px;
+}
+
+.linha-produto input{
+  width:65px;
+  text-align:center;
+}
+
+/* BOTÃO REMOVER */
+.btn-remover{
+  width:34px;
+  height:48px;
+  border:none;
+  border-radius:10px;
+  background:#ff5c5c;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.btn-remover:hover{
+  background:#ff3b3b;
+}
+
+/* BOTÕES */
+button{
+  font-weight:600;
+  border:none;
+  border-radius:10px;
+  color:white;
+  cursor:pointer;
+}
+
+.btn-add{
+  width:100%;
+  height:44px;
+  margin:10px 0;
+  background:linear-gradient(135deg,#9edcff,#7fd0ff);
+}
+
+button[type="submit"]{
+  width:100%;
+  height:46px;
+  font-size:15px;
+  background:linear-gradient(135deg,#5fb8ff,#3aa9ff);
+}
+
+/* CHECKBOX */
+.checkbox{
+  margin:14px 0;
+  display:flex;
+  gap:8px;
+  font-size:13px;
+  color:#333;
+}
+
+/* POPUP */
+.popup-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.3);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.popup-box{
+  width:320px;
+  background:rgba(255,255,255,0.4);
+  backdrop-filter:blur(15px);
+  border-radius:16px;
+  padding:25px;
+  text-align:center;
+}
+
+.popup-box button{
+  width:100%;
+  height:42px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,#7CFFB2,#3DDB8A);
+  color:white;
+}
+/* 🔥 RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* 🔥 CORREÇÃO MOBILE */
+html, body{
+  height:100%;
+  margin:0;
+  padding:0;
+  background:linear-gradient(135deg,#c9e8ff,#8fd3ff,#5fb8ff);
+}
+
+/* 🔥 ESSA LINHA ACABA COM A BORDA BRANCA */
+body{
+  min-height:100dvh;
+  overscroll-behavior-y:contain;
+}
+
+/* CARD */
+.Formulario{
+  width:420px;
+  max-width:95%;
+  margin:auto;
+  margin-top:40px;
+  background:rgba(255,255,255,0.45);
+  border-radius:16px;
+  padding:30px;
+}
+
+/* 🔥 REMOVE DEFINITIVO DO BRANCO NO MOBILE */
+html, body{
+  height:100%;
+  min-height:100dvh;
+  overflow-x:hidden;
+  background:linear-gradient(135deg,#c9e8ff,#8fd3ff,#5fb8ff);
+}
+
+/* 🔥 ESSA LINHA É A CHAVE */
+body{
+  overscroll-behavior-y:none;
+}
+
+/* 🔥 TRAVA TOTAL DA TELA (SEM PUXAR, SEM ENCOLHER) */
+html, body{
+  height:100%;
+  overflow:hidden;
+  touch-action:none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+
+<!-- 🔥 CORREÇÃO MOBILE + BLOQUEIO DE ZOOM -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+<title>Registro Rápido</title>
+
+<link rel="stylesheet" href="css/vendas-login.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="Formulario">
+
+  <h2>Registro Rápido</h2>
+
+  <form id="formRapido">
+
+    <div class="input-box">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+    </div>
+
+    <div class="input-box">
+      <input type="tel" id="telefone" placeholder="Telefone" required>
+    </div>
+
+    <div id="listaProdutos"></div>
+
+    <button type="button" id="addProduto" class="btn-add">
+      + Adicionar produto
+    </button>
+
+    <div class="checkbox">
+      <input type="checkbox" id="autorizacao" required>
+      <label>
+        Aceito receber mensagens no WhatsApp referentes a esta compra
+      </label>
+    </div>
+
+    <button type="submit">Finalizar</button>
+
+  </form>
+
+</div>
+
+<div id="popupSucesso" class="popup-overlay">
+  <div class="popup-box">
+    <h3>Compra concluída ✅</h3>
+    <p>Os dados foram enviados com sucesso.</p>
+    <button id="btnOk">OK</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/registro.js"></script>
+
+</body>
+</html>

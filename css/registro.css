@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins", sans-serif;
+}
+
+/* 🔥 BASE MOBILE CORRETA */
+html, body{
+  height:100%;
+  min-height:100dvh;
+  overflow-x:hidden;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#c9e8ff,#8fd3ff,#5fb8ff);
+  overscroll-behavior:none;
+}
+
+/* CARD */
+.Formulario{
+  width:400px;
+  max-width:95%;
+  background:rgba(255,255,255,0.45);
+  border:1px solid rgba(255,255,255,0.6);
+  backdrop-filter:blur(12px);
+  border-radius:16px;
+  padding:35px;
+  transition:0.3s;
+}
+
+.Formulario:hover{
+  transform:translateY(-3px);
+}
+
+/* BOTÕES TOPO */
+.botoes-formulario{
+  display:flex;
+  margin-bottom:30px;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.botoes-formulario button{
+  flex:1;
+  height:45px;
+  border:none;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:600;
+  background:#cfeeff;
+  color:#5fb8ff;
+}
+
+.botoes-formulario button.ativo{
+  background:#5fb8ff;
+  color:white;
+}
+
+/* INPUTS */
+.caixa-formulario-login{
+  position:relative;
+  margin-bottom:25px;
+}
+
+.caixa-formulario-login input{
+  width:100%;
+  height:50px;
+  border:none;
+  border-radius:10px;
+  background:rgba(255,255,255,0.6);
+  padding-left:40px;
+}
+
+.caixa-formulario-login input:focus{
+  outline:none;
+  box-shadow:0 0 0 2px #7fd0ff;
+}
+
+.caixa-formulario-login i{
+  position:absolute;
+  left:12px;
+  top:15px;
+  color:#7fd0ff;
+}
+
+/* LEMBRAR */
+.caixa-lembrar-esqueci{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+  font-size:14px;
+}
+
+.caixa-lembrar-esqueci a{
+  color:#5fb8ff;
+  text-decoration:none;
+}
+
+/* BOTÃO */
+form button{
+  width:100%;
+  height:45px;
+  background:linear-gradient(135deg,#9edcff,#7fd0ff);
+  border:none;
+  border-radius:10px;
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* ESPAÇAMENTO ENTRE BOTÕES */
+form button + button{
+  margin-top:12px;
+}
+
+/* TRANSIÇÃO */
+.area-formularios{
+  position:relative;
+  height:320px;
+}
+
+.form-login,
+.form-registro{
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transform:translateX(60px) scale(0.98);
+  transition:all .5s ease;
+}
+
+.form-login{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateX(0) scale(1);
+}
+
+.Formulario.ativo .form-login{
+  opacity:0;
+  transform:translateX(-60px) scale(0.98);
+}
+
+.Formulario.ativo .form-registro{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateX(0) scale(1);
+}
+/* 🔥 RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* 🔥 CORREÇÃO MOBILE */
+html, body{
+  height:100%;
+  margin:0;
+  padding:0;
+  background:linear-gradient(135deg,#c9e8ff,#8fd3ff,#5fb8ff);
+}
+
+/* 🔥 ESSA LINHA ACABA COM A BORDA BRANCA */
+body{
+  min-height:100dvh;
+  overscroll-behavior-y:contain;
+}
+
+/* CARD */
+.Formulario{
+  width:420px;
+  max-width:95%;
+  margin:auto;
+  margin-top:40px;
+  background:rgba(255,255,255,0.45);
+  border-radius:16px;
+  padding:30px;
+}
+
+/* 🔥 REMOVE DEFINITIVO DO BRANCO NO MOBILE */
+html, body{
+  height:100%;
+  min-height:100dvh;
+  overflow-x:hidden;
+  background:linear-gradient(135deg,#c9e8ff,#8fd3ff,#5fb8ff);
+}
+
+/* 🔥 ESSA LINHA É A CHAVE */
+body{
+  overscroll-behavior-y:none;
+}
+/* 🔥 TRAVA TOTAL DA TELA (SEM PUXAR, SEM ENCOLHER) */
+html, body{
+  height:100%;
+  overflow:hidden;
+  touch-action:none;
+}
